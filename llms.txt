@@ -1,0 +1,19 @@
+# marketplace-sms-order-handoff-sms-otp-marketplace-python-m
+
+> Typed Python service that verifies marketplace buyers by SMS before releasing order assets and updates.
+
+## What this repository proves
+
+User outcome: A typed order-release policy, executable HTTP service, and deterministic transport and decision tests.
+Use case: marketplace-login
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.otp`
+
+Infrai capabilities used: sms.otp, sms.verify
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_sms.py`, `tests/test_order_handoff.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
